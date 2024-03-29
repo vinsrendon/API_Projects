@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS | BREAK-HOME</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onresize="vw()" onload="vw(),getNews()">    
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><img class="icon" src="assets/x-regular-24.png" alt="close sidebar icon"></a></li>
+            <li id="user"><a href="#" id="user"></a></li>         
+            <li><a href="index.html"><img class="icon" src="assets/log-out-regular-24.svg" alt="logoutLogo"></a></li>
+        </ul>
+        <ul>
+            <li><a href="landing.html"><img class="banner" src="assets/Banner.svg" alt="Banner Logo"></a></li>            
+            <li class="hideOnMobile" id="user"></li>            
+            <li class="hideOnMobile"><a href="index.html"><img class="icon" src="assets/log-out-regular-24.svg" alt="logoutLogo"></a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><img class="icon" src="assets/menu-regular-24.png" alt="open sidebar icon"></a></li>
+        </ul>
+    </nav>
+    <main class="landingMain">
+        <h1>NEWS</h1>
+        <div class="gallery">
+
+        </div>
+    </main>
+</body>
+</html>
